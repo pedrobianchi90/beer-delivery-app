@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Button({ className, dataTestId, type, name, disabled, onClick, text }) {
   return (
-    <div className="flex items-center justify-between">
+    <div>
       <button
         className={ className }
         data-testid={ dataTestId }

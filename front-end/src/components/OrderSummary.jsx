@@ -16,35 +16,34 @@ function OrderSummary({
   testIdPrefix,
 }) {
   return (
-    <div>
-      <p>
-        <span
-          data-testid={
-            `${testIdPrefix}__element-order-details-label-order-id`
-          }
-        >
-          PEDIDO
-          {' '}
-          {padId(id)}
-        </span>
-        <span
-          data-testid={
-            `${testIdPrefix}__element-order-details-label-order-date`
-          }
-        >
-          {dateFormat(saleDate)}
-        </span>
-        <span
-          data-testid={
-            `${testIdPrefix}__element-order-details-label-delivery-status`
-          }
-        >
-          {status}
-        </span>
-      </p>
-      <div>
-        { children }
-      </div>
+    <div className="flex justify-evenly mb-5">
+      <span
+        className="font-bold"
+        data-testid={
+          `${testIdPrefix}__element-order-details-label-order-id`
+        }
+      >
+        PEDIDO
+        {' '}
+        {padId(id)}
+      </span>
+      <span
+        className="font-bold"
+        data-testid={
+          `${testIdPrefix}__element-order-details-label-order-date`
+        }
+      >
+        {dateFormat(saleDate)}
+      </span>
+      <span
+        className="font-bold"
+        data-testid={
+          `${testIdPrefix}__element-order-details-label-delivery-status`
+        }
+      >
+        {status}
+      </span>
+      {children}
     </div>
   );
 }

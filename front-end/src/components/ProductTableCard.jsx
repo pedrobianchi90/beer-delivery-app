@@ -41,6 +41,7 @@ function ProductTableCard({
           data-testid={ `${testIdPrefix}__element-order-table-remove-${index}` }
         >
           <Button
+            className="bg-red-500 p-1 w-8/12 rounded text-white"
             dataTestId={ `${testIdPrefix}__element-order-table-remove-${index}` }
             name="Remover"
             text="Remover"

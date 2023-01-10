@@ -11,13 +11,13 @@ function Header({ homepage, homepageLabel, children, testId }) {
 
   return (
     <div
-      className="flex items-stretch justify-between align-middle
+      className="flex items-center justify-between align-middle
       h-px text-gray-400 font-bold
       bg-yellow-300 shadow-xl rounded px-20 pt-10 pb-10 mb-10"
     >
       <Link to={ homepage }>
         <Button
-          className="text-white rounded-sm shadow-sm text-lg w-40 h-8"
+          className="text-gray-600 rounded-sm shadow-sm text-lg w-40 h-8"
           dataTestId={ `${testId.prefix}__element-navbar-link-${testId.sufix}` }
           type="button"
           name={ homepageLabel }
@@ -26,7 +26,7 @@ function Header({ homepage, homepageLabel, children, testId }) {
       </Link>
       { children }
       <h2
-        className="text-white text-lg w-40 h-8"
+        className="text-gray-600 text-lg w-60 h-8"
         data-testid={ `${testId.prefix}__element-navbar-user-full-name` }
       >
         { name }

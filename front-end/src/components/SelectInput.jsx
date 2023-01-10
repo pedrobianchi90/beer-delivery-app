@@ -11,28 +11,31 @@ function SelectInput({
   nameField,
 }) {
   return (
-    <label htmlFor={ testId }>
-      {fieldName}
+    <div className="flex flex-col font-semibold">
+      <label className="mr-1 text-gray-600" htmlFor={testId}>
+        {fieldName}
+      </label>
       <select
-        value={ value }
-        id={ testId }
-        data-testid={ testId }
-        fieldname={ name }
-        onChange={ (event) => setter(event.target.value) }
+        className="w-full p-2"
+        value={value}
+        id={testId}
+        data-testid={testId}
+        fieldname={name}
+        onChange={(event) => setter(event.target.value)}
       >
         {options.map((obj, i) => (
-          <option value={ obj[valueField] } key={ i }>
+          <option value={obj[valueField]} key={i}>
             {obj[nameField]}
           </option>
         ))}
       </select>
-    </label>
+    </div>
   );
 }
 
 SelectInput.defaultProps = {
   value: undefined,
-  setter: () => {},
+  setter: () => { },
 };
 
 SelectInput.propTypes = {

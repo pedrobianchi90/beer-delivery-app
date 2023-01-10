@@ -11,8 +11,8 @@ function GenericInput({
   setter,
   fieldName }) {
   return (
-    <div className="mb-6">
-      <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor={ testId }>
+    <div className="flex flex-col my-4">
+      <label className="block text-gray-600 text-sm font-bold mb-2" htmlFor={ testId }>
         { fieldName }
         <input
           className={ className }

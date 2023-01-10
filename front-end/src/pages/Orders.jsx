@@ -26,9 +26,9 @@ function Order() {
   }
 
   return (
-    <div>
+    <div className="bg-gray-200">
       { role === 'seller' ? <HeaderSeller /> : <HeaderCustomer />}
-      <div>
+      <div className="flex justify-center">
         { data
           ? data.map((card, index) => (
             <OrderCard
