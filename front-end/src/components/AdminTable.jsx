@@ -35,8 +35,10 @@ function AdminTable({ update }) {
 
   return (
     <div>
-      <h2>Lista de usuários</h2>
-      <table>
+      <h2 className="font-bold decoration-8 mb-2 mt-5">Lista de usuários</h2>
+      <table className="
+          text-center table-auto border-solid shadow text-gray-600 w-full rounded-2xl
+          ">
         <thead>
           <tr>
             {
@@ -51,7 +53,10 @@ function AdminTable({ update }) {
         <tbody>
           {
             users.map((user, index) => (
-              <tr key={ user.email }>
+              <tr
+                className="bg-white border-solid border-4 border-gray-200 text-gray-600"
+                key={ user.email }
+              >
                 <td
                   data-testid={ `admin_manage__element-user-table-item-number-${index}` }
                 >
@@ -74,6 +79,7 @@ function AdminTable({ update }) {
                 </td>
                 <td>
                   <button
+                    className="bg-red-500 p-1 w-8/12 rounded text-white"
                     data-testid={ `admin_manage__element-user-table-remove-${index}` }
                     type="button"
                     onClick={ () => handleDeleteBtn(user.id) }

@@ -10,12 +10,14 @@ export default function AdminManage() {
   return (
     <div>
       <HeaderAdmin />
-      <AdminRegisterForm
-        updateList={ () => setUpdate((prev) => !prev) }
-      />
-      <AdminTable
-        update={ update }
-      />
+      <div className="ml-2">
+        <AdminRegisterForm
+          updateList={ () => setUpdate((prev) => !prev) }
+        />
+        <AdminTable
+          update={ update }
+        />
+      </div>
     </div>
   );
 }

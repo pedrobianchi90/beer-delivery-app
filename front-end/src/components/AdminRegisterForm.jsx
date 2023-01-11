@@ -6,6 +6,10 @@ import GenericInput from './Input';
 import SelectInput from './SelectInput';
 import { postRegisterWithRole } from '../service/userRequests';
 
+// const btn = 'bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-0.5 px-4 border border-blue-500 hover:border-transparent rounded mt-3';
+// const btnDisabled = 'bg-blue-500 text-white font-bold py-0.5 px-4 rounded opacity-50 cursor-not-allowed mt-3';
+
+
 function AdminRegisterForm({ updateList }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -36,6 +40,7 @@ function AdminRegisterForm({ updateList }) {
   return (
     <form>
       <GenericInput
+        className="ml-1"
         testId="admin_manage__input-name"
         type="name"
         input={ name }
@@ -43,10 +48,11 @@ function AdminRegisterForm({ updateList }) {
         placeholder="Seu nome"
         setter={ setName }
         selector="name"
-        fieldName="name"
+        fieldName="Nome:"
       />
 
       <GenericInput
+        className="ml-2"
         testId="admin_manage__input-email"
         type="email"
         input={ email }
@@ -54,10 +60,11 @@ function AdminRegisterForm({ updateList }) {
         placeholder="seu-email@site.com.br"
         setter={ setEmail }
         selector="email"
-        fieldName="Email"
+        fieldName="Email:"
       />
 
       <GenericInput
+        className="ml-1"
         testId="admin_manage__input-password"
         type="password"
         input={ password }
@@ -65,9 +72,10 @@ function AdminRegisterForm({ updateList }) {
         placeholder="********"
         setter={ setPassword }
         selector="senha"
-        fieldName="Senha"
+        fieldName="Senha:"
       />
       <SelectInput
+        className="mb-10"
         fieldName="Tipo"
         name="Vendedor"
         nameField="name"
@@ -78,6 +86,8 @@ function AdminRegisterForm({ updateList }) {
         valueField="id"
       />
       <Button
+        // className={ disabledBtn ? btnDisabled : btn }
+        className="mt-5 mb-5 font-semibold text-md bg-green-500 p-2 rounded-lg"
         dataTestId="admin_manage__button-register"
         type="submit"
         name="register"
