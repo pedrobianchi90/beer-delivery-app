@@ -5,9 +5,11 @@ import ProductTableCard from './ProductTableCard';
 function ProductTable({ products, removeProduct, testIdPrefix, totalPrice }) {
   return (
     <section>
-      <table className="
+      <table
+        className="
           text-center table-auto border-solid shadow text-gray-600 w-full rounded-2xl
-          ">
+          "
+      >
         <thead className="bg-yellow-300">
           <tr>
             <th>Item</th>
@@ -21,11 +23,11 @@ function ProductTable({ products, removeProduct, testIdPrefix, totalPrice }) {
         <tbody className="bg-white">
           {Object.values(products).map((product, i) => (
             <ProductTableCard
-              {...product}
-              testIdPrefix={testIdPrefix}
-              removeProduct={removeProduct}
-              index={i}
-              key={i}
+              { ...product }
+              testIdPrefix={ testIdPrefix }
+              removeProduct={ removeProduct }
+              index={ i }
+              key={ i }
             />
           ))}
         </tbody>
@@ -34,8 +36,8 @@ function ProductTable({ products, removeProduct, testIdPrefix, totalPrice }) {
       <div className="mt-10 flex font-bold">
         <h1 className="mr-1">Total: </h1>
         <FormattedPrice
-          price={totalPrice}
-          testid={`${testIdPrefix}__element-order-total-price`}
+          price={ totalPrice }
+          testid={ `${testIdPrefix}__element-order-total-price` }
         />
       </div>
     </section>

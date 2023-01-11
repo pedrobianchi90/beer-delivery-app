@@ -9,7 +9,6 @@ import { postRegisterWithRole } from '../service/userRequests';
 const btn = 'bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-0.5 px-4 border border-blue-500 hover:border-transparent rounded mt-3';
 const btnDisabled = 'bg-blue-500 text-white font-bold py-0.5 px-4 rounded opacity-50 cursor-not-allowed mt-3';
 
-
 function AdminRegisterForm({ updateList }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -87,7 +86,6 @@ function AdminRegisterForm({ updateList }) {
       />
       <Button
         className={ disabledBtn === true ? btnDisabled : btn }
-        // className="mt-5 mb-5 font-semibold text-md bg-green-500 p-2 rounded-lg"
         dataTestId="admin_manage__button-register"
         type="submit"
         name="register"

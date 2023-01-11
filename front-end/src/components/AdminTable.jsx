@@ -36,9 +36,10 @@ function AdminTable({ update }) {
   return (
     <div>
       <h2 className="font-bold decoration-8 mb-2 mt-5">Lista de usuários</h2>
-      <table className="
-          text-center table-auto border-solid shadow text-gray-600 w-full rounded-2xl
-          ">
+      <table
+        className="text-center table-auto border-solid shadow text-gray-600
+        w-full rounded-2xl"
+      >
         <thead>
           <tr>
             {

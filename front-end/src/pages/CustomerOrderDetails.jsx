@@ -28,17 +28,17 @@ function CustomerOrderDetails() {
       <HeaderCustomer />
       <div className="w-full h-full flex flex-col">
         <OrderDetails
-          id={data.id}
-          sellerName={data.seller.name}
-          saleDate={data.saleDate}
-          saleStatus={data.status}
-          handleReceiving={handleReceiving}
+          id={ data.id }
+          sellerName={ data.seller.name }
+          saleDate={ data.saleDate }
+          saleStatus={ data.status }
+          handleReceiving={ handleReceiving }
         />
       </div>
       <ProductTable
-        products={data.products}
+        products={ data.products }
         testIdPrefix="customer_order_details"
-        totalPrice={Number(data.totalPrice)}
+        totalPrice={ Number(data.totalPrice) }
       />
     </div>
   ) : <p>loading</p>;

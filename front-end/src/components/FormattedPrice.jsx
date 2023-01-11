@@ -16,7 +16,7 @@ function FormattedPrice({ price, testid }) {
 }
 
 FormattedPrice.propTypes = {
-  price: PropTypes.number.isRequired,
+  price: PropTypes.string.isRequired,
   testid: PropTypes.string.isRequired,
 };
 

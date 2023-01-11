@@ -17,26 +17,26 @@ function OrderCard({ prefix, card, role }) {
   return (
     <div className="bg-gray-200 h-full px-20 py-20 flex flex-row">
       <div className="max-w-sm bg-white rounded overflow-hidden shadow-lg">
-        <Link to={`/${role}/orders/${id}`}>
+        <Link to={ `/${role}/orders/${id}` }>
           <section className="px-6 py-4 text-gray-700 text-base">
             <div>
               <h3
                 className="id-content font-bold text-xl mb-2 text-center"
-                data-testid={`${prefix}__element-order-id-${id}`}
+                data-testid={ `${prefix}__element-order-id-${id}` }
               >
                 {id}
               </h3>
             </div>
             <h3
               className="status-content"
-              data-testid={`${prefix}__element-delivery-status-${id}`}
+              data-testid={ `${prefix}__element-delivery-status-${id}` }
             >
               {status}
             </h3>
             <div className="more-info-content">
               <h4
                 className="date-content"
-                data-testid={`${prefix}__element-order-date-${id}`}
+                data-testid={ `${prefix}__element-order-date-${id}` }
               >
                 {dateFormat(saleDate)}
               </h4>
@@ -44,8 +44,8 @@ function OrderCard({ prefix, card, role }) {
                 className="date-content"
               >
                 <FormattedPrice
-                  price={totalPrice}
-                  testid={`${prefix}__element-card-price-${id}`}
+                  price={ totalPrice }
+                  testid={ `${prefix}__element-card-price-${id}` }
                 />
               </h4>
             </div>
@@ -54,7 +54,7 @@ function OrderCard({ prefix, card, role }) {
                 <footer>
                   <h5
                     className="address-content"
-                    data-testid={`${prefix}__element-card-address-${id}`}
+                    data-testid={ `${prefix}__element-card-address-${id}` }
                   >
                     {`${deliveryAddress}, ${deliveryNumber}`}
                   </h5>

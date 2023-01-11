@@ -12,19 +12,19 @@ function SelectInput({
 }) {
   return (
     <div className="flex flex-col font-semibold">
-      <label className="mr-1 text-gray-600" htmlFor={testId}>
+      <label className="mr-1 text-gray-600" htmlFor={ testId }>
         {fieldName}
       </label>
       <select
         className="w-full p-2"
-        value={value}
-        id={testId}
-        data-testid={testId}
-        fieldname={name}
-        onChange={(event) => setter(event.target.value)}
+        value={ value }
+        id={ testId }
+        data-testid={ testId }
+        fieldname={ name }
+        onChange={ (event) => setter(event.target.value) }
       >
         {options.map((obj, i) => (
-          <option value={obj[valueField]} key={i}>
+          <option value={ obj[valueField] } key={ i }>
             {obj[nameField]}
           </option>
         ))}

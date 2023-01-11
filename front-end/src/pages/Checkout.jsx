@@ -82,29 +82,29 @@ function Checkout() {
           <GenericInput
             className="w-full shadow p-2"
             fieldName="Endereço"
-            input={address}
+            input={ address }
             name="address"
             placeholder="Travessa Terceira, Bairro Muruci"
             testId="customer_checkout__input-address"
             type="text"
-            setter={setAddress}
+            setter={ setAddress }
           />
           <GenericInput
             className="w-full shadow p-2"
             fieldName="Número"
-            input={number}
+            input={ number }
             name="number"
             placeholder="198"
             testId="customer_checkout__input-address-number"
             type="text"
-            setter={setNumber}
+            setter={ setNumber }
           />
           <Button
             className="font-semibold text-lg bg-green-500 p-3 rounded-lg"
             dataTestId="customer_checkout__button-submit-order"
             text="FINALIZAR PEDIDO"
             type="submit"
-            onClick={submitOrder}
+            onClick={ submitOrder }
           />
           {error && <p>{error.message}</p>}
         </form>
