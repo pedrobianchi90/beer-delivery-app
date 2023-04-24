@@ -30,5 +30,28 @@ The project was made in collaboration with Adalberto Ribeiro, Clever Junior, Ger
   * To start the database, you must use the command `docker-compose up -d` inside the project's root folder.
 5. Start the project:
   * ```npm start```
+<br>
+
+## Users
+
+### Administrator:
+
+`email: adm@deliveryapp.com`
+<br>
+`password: --adm2@21!!--`
+<br>
+
+### Vendor:
+
+`email: fulana@deliveryapp.com`
+<br>
+`password: fulana@123`
+<br>
+
+### Client:
+
+`email: zebirita@email.com`
+<br>
+`password: $#zebirita#$`
 
 
