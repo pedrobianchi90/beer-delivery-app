@@ -5,7 +5,7 @@ This is a beer delivery project that includes a front-end, back-end, and databas
 
 The project was made in collaboration with Adalberto Ribeiro, Clever Junior, Geraldo Almeida, Guilherme Axhcar and Thiago Flexa.
 
-<br><br>
+<br>
 
 ## Tools
 <div style="display: inline_block">
