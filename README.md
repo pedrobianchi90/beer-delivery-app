@@ -3,7 +3,7 @@
 ## Context
 This is a beer delivery project that includes a front-end, back-end, and database. The project allows users to access the platform through three types of accounts: customer, vendor, and administrator. Each type of account has different functions and privileges, allowing for a personalized experience for each user.
 
-The project was made in collaboration with Adalberto Ribeiro, Clever Junior, Geraldo Almeida, Guilherme Axhcar.
+The project was made in collaboration with Adalberto Ribeiro, Clever Junior, Geraldo Almeida, Guilherme Axhcar and Thiago Flexa.
 
 <br><br>
 
