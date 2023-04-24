@@ -18,3 +18,17 @@ The project was made in collaboration with Adalberto Ribeiro, Clever Junior, Ger
   <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-plain.svg">
  </div>
 <br>
+
+## Starting The Project
+1. Clone the repository:
+  * ```git clone git@github.com:pedrobianchi90/delivery-app.git```
+2. Navigate to the cloned repository folder:
+  * ```cd delivery-app```
+3. Install the dependencies:
+  * ```npm run dev:prestart```
+4. Docker:
+  * To start the database, you must use the command `docker-compose up -d` inside the project's root folder.
+5. Start the project:
+  * ```npm start```
+
+
